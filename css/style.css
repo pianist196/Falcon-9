@@ -1,0 +1,2394 @@
+@font-face {
+  font-family: "Suisse Int'l";
+  font-display: swap;
+  src: url("../fonts/Suisse Int'l Medium.woff") format("woff"), url("../fonts/Suisse Int'l Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "terminator real nfi";
+  font-display: swap;
+  src: url("../fonts/terminator real nfi.woff") format("woff"), url("../fonts/terminator real nfi.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-left: 87px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#867863), to(#b9b2a6));
+  background: -o-linear-gradient(top, #867863 0%, #b9b2a6 100%);
+  background: linear-gradient(to bottom, #867863 0%, #b9b2a6 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  -webkit-transition: background-size .4s;
+  -o-transition: background-size .4s;
+  transition: background-size .4s;
+  padding-bottom: 2px;
+}
+
+.header__nav-link:hover {
+  background-size: 4px 50px;
+}
+
+.burger-open {
+  fill: #fff;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.burger-open:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.burger-open svg {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu {
+  display: none;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.mobile-menu.open {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.mobile-menu__link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 85px;
+}
+
+.tabs {
+  margin-bottom: 150px;
+}
+
+.tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 850px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 97px;
+}
+
+.tabs__link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 35px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.tabs__link:hover {
+  color: #fff;
+}
+
+.tabs__link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.tabs__link.active {
+  color: #fff;
+  position: relative;
+}
+
+.tabs__link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.img__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+.img__text {
+  max-width: 430px;
+}
+
+.img__text:last-child {
+  margin-left: 100px;
+}
+
+.tabs__img-content {
+  display: none;
+}
+
+.tabs__img-content.active {
+  display: block;
+}
+
+.rocket-descr {
+  position: relative;
+}
+
+.rocket-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.rocket-height svg {
+  width: 140px;
+  height: 650px;
+  fill: none;
+}
+
+.rocket-height__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.rocket-height__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.rocket-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+.rocket-info__start:last-child {
+  margin-left: 100px;
+}
+
+.start__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 111px;
+  color: #FFFFFF;
+}
+
+.start__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.rocket-massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+
+.rocket-massa svg {
+  fill: none;
+  margin-right: 10px;
+}
+
+.massa__text-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.massa__text-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.rocket-diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 80%;
+  right: 11%;
+}
+
+.rocket-diametr svg {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.diametr__text-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.diametr__text-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -5px;
+  left: -59px;
+}
+
+.diametr__text-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.first__stage {
+  position: relative;
+}
+
+.first__stage-noo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.first__stage-noo svg {
+  fill: none;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.first__stage-gpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+}
+
+.first__stage-gpo svg {
+  fill: none;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.first__stage-mars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+.first__stage-mars svg {
+  fill: none;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.stage__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.stage__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.second__stage {
+  position: relative;
+}
+
+.second__stage-noo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.second__stage-noo svg {
+  width: 150px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.second__stage-gpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.second__stage-gpo svg {
+  width: 150px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.second__stage-mars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.second__stage-mars svg {
+  width: 150px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.cowl {
+  position: relative;
+}
+
+.cowl__height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.cowl__height svg {
+  height: 450px;
+  width: 150px;
+  fill: none;
+}
+
+.height-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.height-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.cowl__diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+
+.cowl__diametr svg {
+  fill: none;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.cowl__diametr-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.cowl__diametr-text__title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -20%;
+  left: -95%;
+}
+
+.cowl__diametr-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.videos {
+  margin-bottom: 220px;
+}
+
+.video__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 82px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.videos {
+  width: 100%;
+}
+
+.videos__wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video__item {
+  padding-top: 56.25%;
+}
+
+.video__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.falcon {
+  margin-bottom: 150px;
+}
+
+.falcon__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.falcon__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+.falcon__tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 850px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 90px;
+}
+
+.falcon__tabs-link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 35px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.falcon__tabs-link:hover {
+  color: #fff;
+}
+
+.falcon__tabs-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.falcon__tabs-link.active {
+  color: #fff;
+  position: relative;
+}
+
+.falcon__tabs-link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.tab-review__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 61px;
+}
+
+.text__review {
+  max-width: 400px;
+  margin: 0 100px;
+}
+
+.falcon-tab__content {
+  position: relative;
+}
+
+.falcon-tab__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.falcon-tab__start:first-child {
+  margin-right: 80px;
+}
+
+.start-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 111px;
+  color: #FFFFFF;
+}
+
+.start-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.falcon-tab__massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 36%;
+  left: 11%;
+}
+
+.falcon-tab__massa svg {
+  fill: none;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.tab__massa-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.tab__massa-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.falcon-tab__diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+
+.falcon-tab__diametr svg {
+  fill: none;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.tab__diametr-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.tab__diametr-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -5px;
+  left: -60px;
+}
+
+.tab__diametr-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.falcon-tab__height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+
+.falcon-tab__height svg {
+  fill: none;
+  width: 150px;
+  height: 650px;
+}
+
+.tab__height-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.tab__height-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.falcon-tab__massa-noo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+}
+
+.falcon-tab__massa-noo svg {
+  width: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.falcon-tab__massa-gpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+}
+
+.falcon-tab__massa-gpo svg {
+  width: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.falcon-tab__massa-mars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 15%;
+  right: 4%;
+}
+
+.falcon-tab__massa-mars svg {
+  width: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.falcon-tab__massa-pluton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 65%;
+  right: 5%;
+}
+
+.falcon-tab__massa-pluton svg {
+  width: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.tab__massa-title__noo {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.tab__massa-number__noo {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.falcon-tab__cowl-diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+
+.falcon-tab__cowl-diametr svg {
+  width: 100px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.falcon-tab__cowl-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+
+.falcon-tab__cowl-height svg {
+  width: 100px;
+  height: 500px;
+  fill: none;
+}
+
+.tab__cowl-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.tab__cowl-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -5px;
+  left: -60px;
+}
+
+.falcon__tab {
+  display: none;
+}
+
+.falcon__tab.active {
+  display: block;
+}
+
+.merlin {
+  margin-bottom: 200px;
+}
+
+.merlin__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 102px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.merlin__subtitle {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 90px;
+}
+
+.merlin__descr {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.merlin__descr-text {
+  max-width: 450px;
+  margin: 0 90px;
+}
+
+.merlin__content {
+  position: relative;
+}
+
+.merlin-img__massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.merlin-img__massa svg {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.merlin-img__pull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 40%;
+  right: 15%;
+}
+
+.merlin-img__pull svg {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.merlin-img__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.merlin-img__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship {
+  margin-bottom: 200px;
+}
+
+.starship__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 102px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.starship__subtitle {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.starship__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 97px;
+}
+
+.starship__link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 35px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.starship__link:hover {
+  color: #fff;
+}
+
+.starship__link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.starship__link.active {
+  color: #fff;
+  position: relative;
+}
+
+.starship__link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.starship-rocket {
+  display: none;
+}
+
+.starship-rocket.active {
+  display: block;
+}
+
+.starship__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+.starship__descr-text {
+  max-width: 430px;
+}
+
+.starship__descr-text:first-child {
+  margin-right: 200px;
+}
+
+.starship__content {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.starship__diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+}
+
+.starship__diametr svg {
+  width: 80px;
+  height: 80px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.diametr-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.diametr-text__title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -15%;
+  left: -80%;
+}
+
+.diametr-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.starship__massa svg {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.massa-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.massa-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  right: 15%;
+}
+
+.starship__height svg {
+  width: 110px;
+  height: 600px;
+  fill: none;
+}
+
+.height-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.height-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__btn {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 58px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.starship__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.footer-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.footer-nav__list-link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-left: 120px;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.footer-nav__list-link:hover {
+  opacity: .3;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+@media (max-width: 1550px) {
+  .rocket-height svg {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cowl__height svg {
+    height: 500px;
+  }
+
+  .falcon-tab__height {
+    top: 0;
+    right: 20%;
+  }
+
+  .falcon-tab__cowl-height svg {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .first__stage-noo {
+    left: 10%;
+  }
+
+  .first__stage-gpo {
+    left: 12%;
+  }
+
+  .first__stage-mars {
+    right: 9%;
+  }
+
+  .falcon-tab__height svg {
+    height: 800px;
+  }
+
+  .falcon-tab__massa-noo {
+    left: 5%;
+  }
+
+  .falcon-tab__massa-mars {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .rocket-info {
+    right: 10%;
+  }
+
+  .rocket-massa {
+    right: 10%;
+  }
+
+  .rocket-diametr {
+    right: 20%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .falcon-tab__cowl-height {
+    top: 10%;
+    right: 15%;
+  }
+
+  .falcon-tab__cowl-height svg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rocket-height {
+    left: 20%;
+  }
+
+  .rocket-height svg {
+    height: 500px;
+  }
+
+  .first__stage-noo {
+    left: 3%;
+  }
+
+  .first__stage-gpo {
+    left: 5%;
+  }
+
+  .first__stage-mars {
+    right: 0%;
+  }
+
+  .cowl__height svg {
+    height: 400px;
+  }
+
+  .cowl__diametr svg {
+    width: 90px;
+  }
+
+  .cowl__diametr-text__title::before {
+    left: -55px;
+  }
+
+  .falcon__title {
+    font-size: 69px;
+  }
+
+  .falcon-tab__massa svg {
+    width: 100px;
+  }
+
+  .falcon-tab__diametr {
+    left: 10%;
+  }
+
+  .falcon-tab__height {
+    top: 10%;
+  }
+
+  .falcon-tab__height svg {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .falcon-tab__massa-gpo {
+    left: 3%;
+  }
+
+  .falcon-tab__massa-mars {
+    right: 3%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .falcon-tab__massa-pluton {
+    right: 3%;
+  }
+
+  .tab__massa-title__noo {
+    font-size: 10px;
+  }
+
+  .starship__height {
+    top: 15%;
+  }
+
+  .starship__height svg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .second__stage-noo svg {
+    width: 100px;
+  }
+
+  .second__stage-gpo svg {
+    width: 100px;
+  }
+
+  .second__stage-mars svg {
+    width: 100px;
+  }
+
+  .footer-nav__list-link {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger-open {
+    display: block;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+
+  .header__title {
+    margin-top: 0;
+  }
+
+  .tabs__list {
+    margin-bottom: 50px;
+  }
+
+  .img__text-wrapper {
+    font-size: 12px;
+  }
+
+  .start__title {
+    font-size: 60px;
+  }
+
+  .start__text {
+    font-size: 16px;
+  }
+
+  .rocket-massa svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .rocket-diametr svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .diametr__text-title::before {
+    width: 120px;
+    bottom: -4px;
+    left: -50px;
+  }
+
+  .first__stage-noo svg {
+    width: 100px;
+  }
+
+  .first__stage-gpo svg {
+    width: 100px;
+  }
+
+  .first__stage-mars svg {
+    width: 100px;
+  }
+
+  .falcon__tabs-list {
+    margin-bottom: 50px;
+  }
+
+  .tab-review__text {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .start-number {
+    font-size: 60px;
+  }
+
+  .start-title {
+    font-size: 18px;
+  }
+
+  .falcon-tab__massa {
+    top: 40%;
+    left: 10%;
+  }
+
+  .falcon-tab__height svg {
+    height: 400px;
+  }
+
+  .starship__list {
+    margin-bottom: 50px;
+  }
+
+  .starship__descr-text:first-child {
+    margin-right: 100px;
+  }
+
+  .starship__diametr svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .diametr-text__title::before {
+    width: 100px;
+    left: -65%;
+    bottom: -14%;
+  }
+
+  .massa-text__title {
+    font-size: 10px;
+  }
+
+  .massa-text__title {
+    max-width: 100px;
+  }
+
+  .massa-text__number {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .cowl__height svg {
+    width: 100px;
+  }
+
+  .cowl__diametr svg {
+    width: 70px;
+  }
+
+  .cowl__diametr-text__title::before {
+    left: -45px;
+    width: 120px;
+  }
+
+  .falcon-tab__cowl-diametr {
+    left: 15%;
+  }
+
+  .falcon-tab__cowl-height svg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .img__text:last-child {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .second__stage-noo {
+    left: 10%;
+  }
+
+  .second__stage-noo svg {
+    width: 80px;
+  }
+
+  .second__stage-gpo svg {
+    width: 80px;
+  }
+
+  .second__stage-mars svg {
+    width: 80px;
+  }
+
+  .falcon__title {
+    font-size: 40px;
+  }
+
+  .merlin__descr {
+    display: block;
+    text-align: center;
+  }
+
+  .merlin__descr-text {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .merlin-img__massa svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .merlin-img__pull svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .merlin-img__title {
+    font-size: 10px;
+  }
+
+  .merlin-img__number {
+    font-size: 12px;
+  }
+
+  .starship__height svg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__title {
+    font-size: 40px;
+  }
+
+  .tabs__link {
+    margin: 0 15px;
+  }
+
+  .img__text-wrapper {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+
+  .img__text {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .rocket-info__start:last-child {
+    margin-left: 30px;
+  }
+
+  .first__stage-noo svg {
+    width: 70px;
+  }
+
+  .first__stage-gpo svg {
+    width: 70px;
+  }
+
+  .first__stage-mars svg {
+    width: 70px;
+  }
+
+  .stage__title {
+    font-size: 10px;
+  }
+
+  .stage__number {
+    font-size: 12px;
+  }
+
+  .falcon__tabs-link {
+    margin: 0 15px;
+  }
+
+  .falcon__tabs-link {
+    margin: 0 15px;
+  }
+
+  .tab-review__text {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .text__review {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .falcon-tab__massa-noo svg {
+    width: 70px;
+  }
+
+  .falcon-tab__massa-gpo svg {
+    width: 70px;
+  }
+
+  .falcon-tab__massa-mars svg {
+    width: 70px;
+  }
+
+  .falcon-tab__massa-pluton svg {
+    width: 70px;
+  }
+
+  .starship__link {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 810px) {
+  .footer-menu {
+    display: block;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-nav__list {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-nav__list-link {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .starship__title {
+    font-size: 60px;
+  }
+
+  .starship__descr {
+    display: block;
+    text-align: center;
+  }
+
+  .starship__descr-text {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+
+  .starship__descr-text:first-child {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .header__text {
+    font-size: 15px;
+  }
+
+  .cowl__height {
+    left: 10%;
+  }
+
+  .cowl__diametr {
+    right: 10%;
+  }
+
+  .cowl__diametr-text__title::before {
+    width: 120px;
+  }
+
+  .falcon-tab__start:first-child {
+    margin-right: 30px;
+  }
+
+  .start-number {
+    font-size: 50px;
+  }
+
+  .start-title {
+    font-size: 14px;
+  }
+
+  .falcon-tab__massa svg {
+    width: 80px;
+  }
+
+  .falcon-tab__diametr svg {
+    width: 70px;
+  }
+
+  .tab__diametr-title::before {
+    width: 110px;
+    left: -45px;
+  }
+
+  .falcon-tab__height svg {
+    width: 70px;
+  }
+
+  .falcon-tab__cowl-diametr svg {
+    width: 70px;
+  }
+
+  .falcon-tab__cowl-height {
+    right: 10%;
+  }
+
+  .tab__cowl-title::before {
+    width: 120px;
+    left: -45px;
+  }
+}
+
+@media (max-width: 730px) {
+  .falcon-tab__massa-noo {
+    display: none;
+  }
+
+  .falcon-tab__massa-gpo {
+    display: none;
+  }
+
+  .falcon-tab__massa-mars {
+    display: none;
+  }
+
+  .falcon-tab__massa-pluton {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .tabs__list {
+    display: block;
+    text-align: center;
+  }
+
+  .tabs__list li {
+    margin-bottom: 10px;
+  }
+
+  .tabs__link {
+    margin: 0 5px;
+  }
+
+  .tabs__link:hover {
+    color: #fff;
+  }
+
+  .tabs__link:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -7px;
+  }
+
+  .tabs__link.active::before {
+    bottom: -7px;
+  }
+
+  .rocket-height svg {
+    height: 300px;
+    width: 100px;
+  }
+
+  .start__title {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .start__text {
+    font-size: 12px;
+  }
+
+  .rocket-massa svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rocket-diametr svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .diametr__text-title::before {
+    width: 90px;
+    bottom: -4px;
+    left: -40px;
+  }
+
+  .falcon__tabs-list {
+    display: block;
+    text-align: center;
+  }
+
+  .falcon__tabs-list li {
+    margin-bottom: 10px;
+  }
+
+  .falcon__tabs-link {
+    margin: 0 5px;
+  }
+
+  .falcon__tabs-link:hover {
+    color: #fff;
+  }
+
+  .falcon__tabs-link:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -7px;
+  }
+
+  .falcon__tabs-link.active::before {
+    bottom: -7px;
+  }
+
+  .starship__height {
+    top: 10%;
+  }
+
+  .starship__height svg {
+    width: 90px;
+  }
+}
+
+@media (max-width: 650px) {
+  .falcon__tabs-link {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    margin-bottom: 50px;
+  }
+
+  .first__stage-noo {
+    display: none;
+  }
+
+  .first__stage-gpo {
+    display: none;
+  }
+
+  .first__stage-mars {
+    display: none;
+  }
+
+  .second__stage-noo {
+    display: none;
+  }
+
+  .second__stage-gpo {
+    display: none;
+  }
+
+  .second__stage-mars {
+    display: none;
+  }
+
+  .cowl__height {
+    display: none;
+  }
+
+  .cowl__diametr {
+    display: none;
+  }
+
+  .videos {
+    margin-bottom: 50px;
+  }
+
+  .video__title {
+    font-size: 26px;
+  }
+
+  .falcon {
+    margin-bottom: 50px;
+  }
+
+  .falcon-tab__info {
+    display: none;
+  }
+
+  .falcon-tab__massa {
+    display: none;
+  }
+
+  .falcon-tab__diametr {
+    display: none;
+  }
+
+  .falcon-tab__height {
+    display: none;
+  }
+
+  .falcon-tab__cowl-diametr {
+    display: none;
+  }
+
+  .falcon-tab__cowl-height {
+    display: none;
+  }
+
+  .merlin {
+    margin-bottom: 50px;
+  }
+
+  .merlin__title {
+    font-size: 50px;
+  }
+
+  .merlin__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .merlin__descr {
+    line-height: 1;
+    font-size: 12px;
+  }
+
+  .merlin-img__massa {
+    display: none;
+  }
+
+  .merlin-img__pull {
+    display: none;
+  }
+
+  .starship__list {
+    display: block;
+    text-align: center;
+  }
+
+  .starship__list li {
+    margin-bottom: 10px;
+  }
+
+  .starship__link {
+    margin: 0 5px;
+  }
+
+  .starship__link:hover {
+    color: #fff;
+  }
+
+  .starship__link:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -7px;
+  }
+
+  .starship__link.active::before {
+    bottom: -7px;
+  }
+
+  .starship__diametr {
+    display: none;
+  }
+
+  .starship__massa {
+    display: none;
+  }
+
+  .starship__height {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .rocket-height {
+    display: none;
+  }
+
+  .rocket-info {
+    display: none;
+  }
+
+  .rocket-massa {
+    display: none;
+  }
+
+  .rocket-diametr {
+    display: none;
+  }
+
+  .starship {
+    margin-bottom: 50px;
+  }
+
+  .starship__title {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .starship__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .starship__descr {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .falcon__text {
+    font-size: 18px;
+  }
+
+  .starship__title {
+    font-size: 30px;
+  }
+
+  .starship__subtitle {
+    font-size: 20px;
+  }
+}
